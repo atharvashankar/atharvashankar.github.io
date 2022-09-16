@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	overflow: hidden;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+	background-image: url("./images/bg.png");
+	background-size:inherit;
+	background-repeat: no-repeat;
+	height: 100vh;
 }
+.glass{
+	background-color: #12214c80;
+	backdrop-filter: blur(25px);
+}
+.white-text{
+	color: #e1e1e1;
+}
+.text-bad{
+	position:static;
+	left: 1165px;
+}
+.white-text:hover{
+	color: #00d0ff;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
